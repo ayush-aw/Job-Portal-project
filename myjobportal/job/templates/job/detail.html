@@ -1,0 +1,117 @@
+{% extends 'job/base.html' %}
+{% load static %}
+{% block body %}
+	<!-- banner -->
+	<div class="inner_page_agile">
+		<h3>{{ data.POST }}</h3>
+		<p></p>
+
+	</div>
+	<!--//banner -->
+	<!--/w3_short-->
+	<div class="services-breadcrumb_w3layouts">
+		<div class="inner_breadcrumb">
+
+			<ul class="short_w3ls"_w3ls>
+				<li><a href="{% url 'index' %}">Home</a><span>|</span></li>
+				<li><a href="{% url 'jobs' %}">Find a Job</a><span>|</span></li>
+                <li>Job Details</li>
+			</ul>
+		</div>
+	</div>
+	<!--//w3_short-->
+	<!-- /inner_content -->
+	<div class="inner_content_info_agileits">
+		<div class="container">
+			<div class="tittle_head_w3ls">
+				<h3 class="tittle">Job Description </h3>
+			</div>
+			<hr/>
+     <!--job discreption-->
+
+			<div class="container">
+				<!-- first Row-->
+				<div class="row">
+					<div class="col-sm-4">
+				<label class="fa fa-user"> POSTEDBY </label>
+				          <p style="margin-left:25px;">{{ data.POSTEDBY }}</p>
+					</div>
+						<div class="col-sm-4">
+				<label class="fa fa-industry"> COMPANY NAME </label>
+				<p style="margin-left:25px;">{{ data.COMPANY }}</p>
+					</div>
+					<div class="col-sm-4">
+				<label class="fa fa-map-marker"> LOCATION </label>
+				<p style="margin-left:25px;">{{ data.LOCATION}}</p>
+					</div>
+		    		</div>
+                 <!--second row-->
+				<hr/>
+					<div class="row">
+					<div class="col-sm-4">
+				<label class="fa fa-wheelchair"> POST </label>
+				   <p style="margin-left:25px;">{{ data.POST }}</p>
+					</div>
+						<div class="col-sm-4">
+				<label class="fa fa-hourglass-o"> MINIMUM EXPERIENCE </label>
+				    <p style="margin-left:25px;">{{ data.MINIMUMEXPERIENCE }}</p>
+					</div>
+					<div class="col-sm-4">
+				<label class="fa fa-mortar-board"> MINIMUM QUALIFICATION </label>
+						              <p style="margin-left:30px;">{{ data.MINIMUMQUALIFICATION }}</p>
+					</div>
+		    		</div>
+				<!--third row-->
+				<hr/>
+				<div class="row">
+					<div class="col-sm-8">
+				<label class="fa fa-pencil-square-o"> JOB DESCRIPTION </label>
+				   <p style="margin-left:25px;">{{ data.JOBDESCRIPTION }}</p>
+					</div>
+				</div>
+				<!--fourth row-->
+				<hr/>
+					<div class="row">
+					<div class="col-sm-4">
+				<label class="fa fa-money"> SALARY RANGE </label>
+				   <p style="margin-left:25px;">{{ data.SALARYRANGE }}</p>
+					</div>
+						<div class="col-sm-4">
+				<label class="fa fa-user"> CONTACT PERSON </label>
+				    <p style="margin-left:25px;">{{ data.CONTACTPERSON }}</p>
+					</div>
+					<div class="col-sm-4">
+				<label class="fa fa-mobile"> MOBILE </label>
+						              <p style="margin-left:25px;">{{ data.MOBILE }}</p>
+					</div>
+		    		</div>
+				<!--fifth row-->
+								<hr/>
+					<div class="row">
+					<div class="col-sm-4">
+				<label class="fa fa-calendar"> POST DATE </label>
+				   <p style="margin-left:25px;">{{ data.POSTDATE }}</p>
+					</div>
+						<div class="col-sm-4">
+				<label class="fa fa-wpexplorer"> CURRENT STATUS </label>
+				    <p style="margin-left:25px;">{{ data.CURRENTSTATUS }}</p>
+					</div>
+					<div class="col-sm-4">
+				<label class="fa fa-weixin"> EMPLOYMENT TYPE </label>
+						              <p style="margin-left:30px;">{{ data.EMPLOYMENTTYPE }}</p>
+					</div>
+
+
+		    		</div>
+				<hr/>
+				<div class="col-sm-5"></div>
+				<div class="col-sm-6"><a href="{% url 'apply'%}"> <button type="submit">Apply</button></a> </div>
+			</div>
+
+			<!--job discreption end-->
+
+            			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- //inner_content -->
+	{% endblock %}

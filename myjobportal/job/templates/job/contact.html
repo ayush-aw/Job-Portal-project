@@ -1,0 +1,86 @@
+{% extends 'job/base.html' %}
+{% load static %}
+{% block body %}
+	<!-- banner -->
+	<div class="inner_page_agile">
+		<h3>Contact</h3>
+		<p>If You Have Any Problem Contact Us</p>
+
+	</div>
+	<!--//banner -->
+	<!--/w3_short-->
+	<div class="services-breadcrumb_w3layouts">
+		<div class="inner_breadcrumb">
+
+			<ul class="short_w3ls"_w3ls>
+				<li><a href="{% url 'index' %}">Home</a><span>|</span></li>
+                <li><a href="{% url 'jobs' %}" >Find A Job </a><span>|</span></li>
+                <li><a href="{% url 'post' %}" >Post A Job </a><span>|</span></li>
+				<li><a href="{% url 'reg' %}" >Ragistration </a><span>|</span></li>
+				<li><a href="{% url 'login' %}" >Login </a><span>|</span></li>
+				<li>Contact</li>
+			</ul>
+		</div>
+	</div>
+	<!--//w3_short-->
+	<!-- /inner_content -->
+	<div class="inner_content_info_agileits">
+		<div class="container">
+			<div class="tittle_head_w3ls">
+				<h3 class="tittle">Contact Us</h3>
+			</div>
+			<div class="inner_sec_grids_info_w3ls">
+				<div class="col-md-4 agile_info_mail_img_info">
+					<div class="address-grid">
+						<h4>Contact <span>Info</span></h4>
+						<div class="mail-agileits-w3layouts">
+							<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							<div class="contact-right">
+								<p>Contact Number </p><span>+91-9650886499</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="mail-agileits-w3layouts">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							<div class="contact-right">
+								<p>Mail </p><a href="mailto:info@example.com">hr@agilesoftech.in</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="mail-agileits-w3layouts">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<div class="contact-right">
+								<p>Location</p><span>G-127,Patel Nagar Lohia Nagar,Ghaziabad,</span><span> Uttar Pradesh 201001</span> <span>INDIA</span>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="agileits_w3layouts_nav_right contact">
+							<div class="social two">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+                <img src="{% static 'images/w1.jpg' %}" alt=" " class="img-responsive" />
+				</div>
+						<div class="clearfix"> </div>
+
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+	<!-- //mid-services -->
+	<!-- /map -->
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3500.48920157811!2d77.42647026508357!3d28.67500938240094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slocation+of+G-127%2CPatel+Nagar+III+Opp.+HDFC+Bank%2C+Lohia+Nagar%2C+Ghaziabad%2C+Uttar+Pradesh+201001+on+google+map!5e0!3m2!1sen!2sin!4v1526791927618" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+{% endblock %}

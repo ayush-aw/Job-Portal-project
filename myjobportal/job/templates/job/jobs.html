@@ -1,0 +1,68 @@
+{% extends 'job/base.html' %}
+{% load static %}
+{% block body %}
+	<!-- banner -->
+	<div  class="inner_page_agile" style="background-image:url({% static 'images/a.jpg' %})">
+		<h3>Find a Job</h3>
+        <p>Find Your Dream Job Here</p>
+
+	</div>
+	<!--//banner -->
+	<!--/w3_short-->
+	<div class="services-breadcrumb_w3layouts">
+	<div class="inner_breadcrumb">
+
+			<ul class="short_w3ls"_w3ls>
+				<li><a href="{% url 'index' %}">Home</a><span>|</span></li>
+				<li>Find A Job</li>
+			</ul>
+		</div>
+	</div>
+	<!--//w3_short-->
+	<!-- /inner_content -->
+	<div class="inner_content_info_agileits">
+		<div class="container">
+			<div class="tittle_head_w3ls">
+				<h3 class="tittle">Available Jobs </h3>
+			</div>
+<hr/>
+			<div class="container">
+	 <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Company</th>
+        <th>Job Vacancy</th>
+		<th>Location</th>
+		<th>Salary</th>
+		<th>Employment</th>
+      </tr>
+    </thead>
+    <tbody>
+	{% if job %}
+	{% for data in job %}
+      <tr>
+        <td>{{ data.POSTDATE }}</td>
+		  <td><a href="{% url 'detail' data.id %}">{{ data.COMPANY }}</a></td>
+        <td>{{ data.POST }}</td>
+		<td>{{ data.LOCATION }}</td>
+		<td>{{ data.SALARYRANGE }}</td>
+		<td>{{ data.EMPLOYMENTTYPE }}</td>
+      </tr>
+	  {% endfor %}
+	  {% else %}
+	<p>No Latest Jobs Avilable</p>
+	{% endif %}
+    </tbody>
+
+  </table>
+
+
+</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- //inner_content -->
+	{% endblock %}
